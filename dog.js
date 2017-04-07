@@ -17,13 +17,20 @@ Dog.prototype.bark = function() {
 Dog.prototype.run = function() {
 	console.log("Run!");
 };
+
 Dog.prototype.wag = function() {
 	console.log("Wag!");
 };
 
+Dog.prototype.sit = function() {
+  console.log(this.name + " is now sitting");
+}
+
+
 var fido = new Dog("Fido", "Mixed", 38);
 var fluffy = new Dog("Fluffy", "Poodle", 30);
 var spot = new Dog("Spot", "Chihuahua", 10);
+var barnaby = new Dog("Barnaby", "Basset Hound", 55);
 
 //overriding bark for spot
 spot.bark = function() {
@@ -41,3 +48,4 @@ fluffy.wag();
 spot.bark();
 spot.run();
 spot.wag();
+barnaby.sit();
