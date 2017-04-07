@@ -25,6 +25,11 @@ var fido = new Dog("Fido", "Mixed", 38);
 var fluffy = new Dog("Fluffy", "Poodle", 30);
 var spot = new Dog("Spot", "Chihuahua", 10);
 
+//overriding bark for spot
+spot.bark = function() {
+  console.log(this.name + " says WOOF!");
+}
+
 fido.bark();
 fido.run();
 fido.wag();
