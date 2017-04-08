@@ -20,7 +20,6 @@ var spot = new Dog("Spot", "Chihuahua", 10);
 
 console.log("Does spot have a sitting property? " + spot.hasOwnProperty("sitting")); //returns false
 console.log("Does fido have a sitting property? " + fido.hasOwnProperty("sitting")); //returns false
-
 fido.sit();
 console.log("Does fido have a sitting property? " + fido.hasOwnProperty("sitting")); //returns true
 console.log("Does fido have a name property? " + fido.hasOwnProperty("name")); //returns true
